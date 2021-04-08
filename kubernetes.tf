@@ -1,11 +1,9 @@
 resource "ibm_container_cluster" "kubernetes_cluster" {
-  name            = "terraform-cluster"
+  name            = "terraform-cluster-test"
   datacenter      = "dal10"
   machine_type    = "free"
   hardware        = "shared"
-  #public_vlan_id  = "vlan"
-  #private_vlan_id = "vlan"
-  #subnet_id       = ["1154643"]
+
   no_subnet        = true
 
   default_pool_size = 1
