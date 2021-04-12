@@ -16,4 +16,6 @@ data "ibm_container_cluster_config" "cluster_config" {
   admin           = "true"
   network         = "true"
   config_dir      = "/tmp"
+
+  depends_on = [ibm_container_cluster.kubernetes_cluster]
 }
