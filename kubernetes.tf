@@ -1,5 +1,5 @@
 resource "ibm_container_cluster" "kubernetes_cluster" {
-  name            = "terraform-cluster-test"
+  name            = "terraform-cluster"
   datacenter      = "dal10"
   machine_type    = "free"
   hardware        = "shared"
