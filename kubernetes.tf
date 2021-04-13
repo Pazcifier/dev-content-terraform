@@ -1,6 +1,6 @@
 resource "ibm_container_cluster" "kubernetes_cluster" {
   name            = "dev-content-cluster"
-  datacenter      = "dal10"
+  datacenter      = "mex01"
   machine_type    = "free"
   hardware        = "shared"
 
